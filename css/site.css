@@ -1,0 +1,98 @@
+    /* baseline recovery */
+    html, body, div, span,
+    h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+      margin: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    .debug.grid {
+      background-image:none;
+      background-image:-moz-linear-gradient(rgba(0,0,0,0.1) 1px,transparent 1px), -moz-linear-gradient(0,rgba(0,0,0,0.02) 10px,transparent 1px);
+      background-image:-webkit-linear-gradient(rgba(0,0,0,0.1) 1px,transparent 1px), -webkit-linear-gradient(0,rgba(0,0,0,0.02) 10px,transparent 1px);
+      background-image:-o-linear-gradient(rgba(0,0,0,0.1) 1px,transparent 1px), -o-linear-gradient(0,rgba(0,0,0,0.02) 10px,transparent 1px);
+      background-size:24px 24px, 95px 85px;
+      -moz-background-size:24px 24px, 95px 85px;
+    }
+
+    body {
+      line-height: 24px;
+      margin: 0;
+      color: #777;
+      background-color: #eee;
+      font-family: 'Arial Rounded MT Bold', San-Serif;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      clear: both;
+      font-size: 24px;
+      color: #777;
+      margin: 24px 0 24px 0;
+    }
+
+    h3 {
+      font-size: 18px;
+      float: left;
+      margin: 24px 0 24px 0;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      color: #777;
+      letter-spacing: -0.1px;
+    }
+
+    li {
+      list-style-type: circle;
+      color: #777;
+    }
+
+    .graph-title {
+      color: #333;
+    }
+
+    .description {
+      float: left;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 24px 2% 48px 2%;
+      width: 60%;
+      overflow: auto;
+      background-color: #fff;
+    }
+
+    .information {
+      clear: both;
+      float: left;
+      margin-top: 20px;
+    }
+
+    .footer {
+      float: left;
+      margin-top: 48px;
+      clear: both;
+    }
