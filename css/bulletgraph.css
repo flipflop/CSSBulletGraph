@@ -1,0 +1,80 @@
+/**
+ *
+ * Licensed under a Creative Commons Attribution 3.0 License
+ * Rozario Chivers 20th June 2014
+ * version 0.1
+ * http://creativecommons.org/licenses/by/3.0/
+ *
+ * Bullet Graph CSS 
+ *
+ */
+.bulletgraph {
+  position: relative;
+  width: 80%;
+  float: left;
+}    
+
+.bulletgraph .bar,
+.bulletgraph .marker {
+  position: absolute;
+  z-index: 1;
+  top: 0.5rem;
+  background-color: #000;
+  height: .5rem;
+}
+
+.bulletgraph .marker {
+  background: none;
+  z-index: 2;
+  top: 0.2rem;
+  height: 1.1rem;
+  border-right: 2px solid #000;
+}
+
+.bulletgraph ol {
+  margin: 0;
+  padding: 0;
+}
+
+.bulletgraph {
+  width: 100%;
+}
+
+.bulletgraph ol li {
+  list-style-type: none;
+}
+
+.bulletgraph ol li {
+  width: 25%;
+  float: left;
+}
+
+.bulletgraph .background .color {
+  background-color: #eee;
+  height: 1.5rem;
+}
+
+.bulletgraph .background .color:nth-child(1) {
+  background-color: #999;
+}
+
+.bulletgraph .background .color:nth-child(2) {
+  background-color: #bbb;
+}
+
+.bulletgraph .background .color:nth-child(3) {
+  background-color: #ddd;
+}
+
+.bulletgraph .background .color:nth-child(4) {
+  background-color: #eee;
+}
+
+.bulletgraph .legend li {
+  height: .9rem;
+}
+
+.bulletgraph .label {
+  color: #666;
+  font-size: .8rem;
+}
