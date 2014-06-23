@@ -1,71 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Cssbulletgraph by flipflop</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <title>Bullet Graph CSS by Rozario Chivers</title>
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/bulletgraph.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Cssbulletgraph</h1>
-        <p>A pure CSS implementation of a Bullet Graph</p>
+    <style>
+    /**
+     *
+     * Licensed under a Creative Commons Attribution 3.0 License
+     * Rozario Chivers 20th June 2014
+     * version 0.1
+     * http://creativecommons.org/licenses/by/3.0/
+     *
+     * Bullet Graph CSS 
+     *
+     */
 
-        <p class="view"><a href="https://github.com/flipflop/CSSBulletGraph">View the Project on GitHub <small>flipflop/CSSBulletGraph</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/flipflop/CSSBulletGraph/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/flipflop/CSSBulletGraph/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/flipflop/CSSBulletGraph">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/flipflop">flipflop</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+    /*
     
+      Bulletgraph Default
+      
+      CSS Parameters required to customise 
+
+    */
+
+    .bulletgraph {
+      margin-bottom: 34px;
+    }
+
+    #bulletgraph1 .bar.width {
+      width: 35%;
+    }
+
+    #bulletgraph1 .marker.distance {
+      width: 35%;
+    }
+
+    /*
+    
+      Bulletgraph Example 2
+      
+      CSS Parameters required to customise 
+
+    */
+
+    #bulletgraph2 .bar.width {
+      width: 45%;
+    }
+
+    #bulletgraph2 .bar.color {
+      background-color: #c00;
+    }
+
+    #bulletgraph2 .marker {
+       border-right: 2px solid #c00;      
+    }
+
+    #bulletgraph2 .marker.distance {
+      width: 40%;
+    }
+
+    /*
+      Background colour overrides
+    */
+
+    #bulletgraph2 .background .color:nth-child(1) {
+      background-color: #FF9912;
+    }
+
+    #bulletgraph2 .background .color:nth-child(2) {
+      background-color: #FFC04D;
+    }
+
+    #bulletgraph2 .background .color:nth-child(3) {
+      background-color: #FFD993;
+    }
+
+    #bulletgraph2 .background .color:nth-child(4) {
+      background-color: #FFECC8;
+    }
+
+
+    /*
+    
+      Bulletgraph Example 3
+
+      CSS Parameters required to customise 
+  
+    */
+
+
+    #bulletgraph3 .bar.width {
+      width: 50%;
+    }
+
+    #bulletgraph3 .bar.color {
+      background-color: #35586C;
+    }
+
+    #bulletgraph3 .marker {
+       border-right: 2px solid #35586C;      
+    }
+
+    #bulletgraph3 .marker.distance {
+      width: 55%;
+    }
+
+    /*
+      Background colour overrides
+    */
+
+    #bulletgraph3 .background .color:nth-child(1) {
+      background-color: #859C27;
+    }
+
+    #bulletgraph3 .background .color:nth-child(2) {
+      background-color: #A2BC13;
+    }
+
+    #bulletgraph3 .background .color:nth-child(3) {
+      background-color: #CDE472;
+    }
+
+    #bulletgraph3 .background .color:nth-child(4) {
+      background-color: #E9F3C2;
+    }
+
+
+    #bulletgraph3 .background .color:nth-child(1).width {
+      width: 30%;
+    }
+
+    #bulletgraph3 .background .color:nth-child(2).width {
+      width: 35%;
+    }
+
+    #bulletgraph3 .background .color:nth-child(3).width {
+      width: 20%;
+    }
+
+    #bulletgraph3 .background .color:nth-child(4).width {
+      width: 15%;
+    }
+
+    #bulletgraph3 .legend .label {
+      text-align: center;
+      padding-top: .2rem;
+    }
+
+    </style>
+
+<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/flipflop/CSSBulletGraph">Fork me on GitHub</a>
+    </div>
+</div>
+  
+<div class="container">
+
+    <h1>Bullet Graph CSS</h1>
+
+    <span class="description">A simple, pure CSS Bullet Graph by <a href="https://twitter.com/terraflop">@terraflop</a></span>
+
+    <h2>Motivation</h2>
+    <p>
+    On a number of past projects I have been asked to create a project or development dashboard to quickly visualise measurements and comparisons. 
+    Typically complex information of this type is conveyed via guages, meters and donut charts.  
+    After researching a number of Data Visualisation alternatives, <a href="http://www.perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pdf">Bullet Graphs</a> seemed to suit my requirements perfectly.
+    <p>
+    After first deciding the write a small JavaScript library to create Bullet Graphs, I quickly discovered that CSS could handle the display entirely.  
+    </p>
+    <p>
+    The results of this effort are exampled below.
+    </p>
+
+    <!-- Example 1: Default bullet graph -->
+    <h2 class="graph-title">Default</h2>
+    <div id="bulletgraph1" class="bulletgraph">
+      <span class="marker distance"></span>
+      <div class="bar width color"></div>
+      <ol class="background series">
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+      </ol>
+      <ol class="legend">
+        <li class="label">Small</li>
+        <li class="label">Medium</li>
+        <li class="label">Large</li>
+        <li class="label">XLarge</li>
+      </ol>
+    </div>
+
+    <!-- example bullet graph 2 -->
+    <h2 class="graph-title">Customised background colours</h2>
+    <div id="bulletgraph2" class="bulletgraph">
+      <span class="marker distance"></span>
+      <div class="bar width color"></div>
+      <ol class="background series">
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+      </ol>
+      <ol class="legend">
+        <li class="label">Small</li>
+        <li class="label">Medium</li>
+        <li class="label">Large</li>
+        <li class="label">XLarge</li>
+      </ol>
+    </div>
+
+    <!-- example bullet graph 3 -->
+    <h2 class="graph-title">Customised background colours, widths and labels</h2>
+    <div id="bulletgraph3" class="bulletgraph">
+      <span class="marker distance"></span>
+      <div class="bar width color"></div>
+      <ol class="background series">
+        <li class="width color"></li>
+        <li class="width color"></li>
+        <li class="width color"></li>
+        <li class="width color"></li>
+      </ol>
+      <ol class="legend">
+        <li class="label width">Small</li>
+        <li class="label width">Medium</li>
+        <li class="label width">Large</li>
+        <li class="label width">XLarge</li>
+      </ol>
+    </div>
+
+    <div class="information">
+      <h2>Features</h2>
+
+      <ul>
+      <li>Responsive</li>
+      <li>Simple to use</li>
+      <li>Customisable</li>
+      <li>CSS API</li>
+      <li>Pure CSS</li>
+      <li>Sans JS</li>
+      </ul>
+
+      <h2>CSS API</h2>
+      <ul>
+        <li>.bar.width</li> 
+        <li>.bar.color</li>
+        <li>.marker</li>
+        <li>.marker.distance</li>
+        <li>.bulletgraph .background .step.color</li>
+        <li>.bulletgraph .background .step.width</li>
+      </ul>
+
+      <h2>Planned Features</h2>
+      <ul>
+        <li>Vertically oriented graph</li>
+        <li>Text Label formatting</li>
+        <li>Bar Chart display across two segments (e.g. current and projected information)</li>
+      </ul>
+    </div><!-- .information -->
+
+    <div class="footer">
+      <p>
+        Please feel free to check out other excellent Bullet Graph implementations: <a href="http://www.usrecordings.com/test-lab/bullet-graph.htm">CSS Bullet Graph</a> and <a href="http://johdax.net/post/jquery-bullet-graph/">jQuery Bullet Graph</a>.
+      </p>
+      <p>
+        This project is maintained by <a href="https://github.com/flipflop">flipflop</a>
+      </p>  
+    </div>
+
+  </div><!-- end .container -->
+  <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
