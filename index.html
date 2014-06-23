@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bullet Graph CSS by Rozario Chivers</title>
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/bulletgraph.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <style>
+    /**
+     *
+     * Licensed under a Creative Commons Attribution 3.0 License
+     * Rozario Chivers 20th June 2014
+     * version 0.1
+     * http://creativecommons.org/licenses/by/3.0/
+     *
+     * Bullet Graph CSS 
+     *
+     */
+
+    /*
+    
+      Bulletgraph Default
+      
+      CSS Parameters required to customise 
+
+    */
+
+    .bulletgraph {
+      margin-bottom: 34px;
+    }
+
+    #bulletgraph1 .bar.width {
+      width: 35%;
+    }
+
+    #bulletgraph1 .marker.distance {
+      width: 35%;
+    }
+
+    /*
+    
+      Bulletgraph Example 2
+      
+      CSS Parameters required to customise 
+
+    */
+
+    #bulletgraph2 .bar.width {
+      width: 45%;
+    }
+
+    #bulletgraph2 .bar.color {
+      background-color: #c00;
+    }
+
+    #bulletgraph2 .marker {
+       border-right: 2px solid #c00;      
+    }
+
+    #bulletgraph2 .marker.distance {
+      width: 40%;
+    }
+
+    /*
+      Background colour overrides
+    */
+
+    #bulletgraph2 .background .color:nth-child(1) {
+      background-color: #FF9912;
+    }
+
+    #bulletgraph2 .background .color:nth-child(2) {
+      background-color: #FFC04D;
+    }
+
+    #bulletgraph2 .background .color:nth-child(3) {
+      background-color: #FFD993;
+    }
+
+    #bulletgraph2 .background .color:nth-child(4) {
+      background-color: #FFECC8;
+    }
+
+
+    /*
+    
+      Bulletgraph Example 3
+
+      CSS Parameters required to customise 
+  
+    */
+
+
+    #bulletgraph3 .bar.width {
+      width: 50%;
+    }
+
+    #bulletgraph3 .bar.color {
+      background-color: #35586C;
+    }
+
+    #bulletgraph3 .marker {
+       border-right: 2px solid #35586C;      
+    }
+
+    #bulletgraph3 .marker.distance {
+      width: 55%;
+    }
+
+    /*
+      Background colour overrides
+    */
+
+    #bulletgraph3 .background .color:nth-child(1) {
+      background-color: #859C27;
+    }
+
+    #bulletgraph3 .background .color:nth-child(2) {
+      background-color: #A2BC13;
+    }
+
+    #bulletgraph3 .background .color:nth-child(3) {
+      background-color: #CDE472;
+    }
+
+    #bulletgraph3 .background .color:nth-child(4) {
+      background-color: #E9F3C2;
+    }
+
+
+    #bulletgraph3 .background .color:nth-child(1).width {
+      width: 30%;
+    }
+
+    #bulletgraph3 .background .color:nth-child(2).width {
+      width: 35%;
+    }
+
+    #bulletgraph3 .background .color:nth-child(3).width {
+      width: 20%;
+    }
+
+    #bulletgraph3 .background .color:nth-child(4).width {
+      width: 15%;
+    }
+
+    #bulletgraph3 .legend .label {
+      text-align: center;
+      padding-top: .2rem;
+    }
+
+    </style>
+
+<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/flipflop/CSSBulletGraph">Fork me on GitHub</a>
+    </div>
+</div>
+  
+<div class="container">
+
+    <h1>Bullet Graph CSS</h1>
+
+    <span class="description">A simple, pure CSS Bullet Graph by <a href="https://twitter.com/terraflop">@terraflop</a></span>
+
+    <h2>Motivation</h2>
+    <p>
+    On a number of past projects I have been asked to create a project or development dashboard to quickly visualise measurements and comparisons. 
+    Typically complex information of this type is conveyed via guages, meters and donut charts.  
+    After researching a number of Data Visualisation alternatives, <a href="http://www.perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pdf">Bullet Graphs</a> seemed to suit my requirements perfectly.
+    <p>
+    After first deciding the write a small JavaScript library to create Bullet Graphs, I quickly discovered that CSS could handle the display entirely.  
+    </p>
+    <p>
+    The results of this effort are exampled below.
+    </p>
+
+    <!-- Example 1: Default bullet graph -->
+    <h2 class="graph-title">Default</h2>
+    <div id="bulletgraph1" class="bulletgraph">
+      <span class="marker distance"></span>
+      <div class="bar width color"></div>
+      <ol class="background series">
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+      </ol>
+      <ol class="legend">
+        <li class="label">Small</li>
+        <li class="label">Medium</li>
+        <li class="label">Large</li>
+        <li class="label">XLarge</li>
+      </ol>
+    </div>
+
+    <!-- example bullet graph 2 -->
+    <h2 class="graph-title">Customised background colours</h2>
+    <div id="bulletgraph2" class="bulletgraph">
+      <span class="marker distance"></span>
+      <div class="bar width color"></div>
+      <ol class="background series">
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+      </ol>
+      <ol class="legend">
+        <li class="label">Small</li>
+        <li class="label">Medium</li>
+        <li class="label">Large</li>
+        <li class="label">XLarge</li>
+      </ol>
+    </div>
+
+    <!-- example bullet graph 3 -->
+    <h2 class="graph-title">Customised background colours, widths and labels</h2>
+    <div id="bulletgraph3" class="bulletgraph">
+      <span class="marker distance"></span>
+      <div class="bar width color"></div>
+      <ol class="background series">
+        <li class="width color"></li>
+        <li class="width color"></li>
+        <li class="width color"></li>
+        <li class="width color"></li>
+      </ol>
+      <ol class="legend">
+        <li class="label width">Small</li>
+        <li class="label width">Medium</li>
+        <li class="label width">Large</li>
+        <li class="label width">XLarge</li>
+      </ol>
+    </div>
+
+    <div class="information">
+      <h2>Features</h2>
+
+      <ul>
+      <li>Responsive</li>
+      <li>Simple to use</li>
+      <li>Customisable</li>
+      <li>CSS API</li>
+      <li>Pure CSS</li>
+      <li>Sans JS</li>
+      </ul>
+
+      <h2>CSS API</h2>
+      <ul>
+        <li>.bar.width</li> 
+        <li>.bar.color</li>
+        <li>.marker</li>
+        <li>.marker.distance</li>
+        <li>.bulletgraph .background .step.color</li>
+        <li>.bulletgraph .background .step.width</li>
+      </ul>
+
+      <h2>Planned Features</h2>
+      <ul>
+        <li>Vertically oriented graph</li>
+        <li>Text Label formatting</li>
+        <li>Bar Chart display across two segments (e.g. current and projected information)</li>
+      </ul>
+    </div><!-- .information -->
+
+    <div class="footer">
+      <p>
+        Please feel free to check out other excellent Bullet Graph implementations: <a href="http://www.usrecordings.com/test-lab/bullet-graph.htm">CSS Bullet Graph</a> and <a href="http://johdax.net/post/jquery-bullet-graph/">jQuery Bullet Graph</a>.
+      </p>
+      <p>
+        This project is maintained by <a href="https://github.com/flipflop">flipflop</a>
+      </p>  
+    </div>
+
+  </div><!-- end .container -->
+  <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
